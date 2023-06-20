@@ -1,10 +1,15 @@
 ﻿namespace LibraryUniformity
 {
-    public class CheckUniformity
+    public class Uniformity
     {
-        public bool CheckValue(int qtyAll, int qtyUniformity)
+        public bool IsValid(int qtyAll, int qtyUniformity)
         {
-            return true;
+            if(qtyUniformity > 0)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
